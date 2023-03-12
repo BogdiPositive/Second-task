@@ -1,0 +1,60 @@
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 40px;
+    padding-bottom: 30px;
+    
+
+
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+        @media screen and (max-width: 1080px) {
+            display: none;
+          }
+        
+        &-img{
+            width: 140px;
+            height: 24px;
+        }
+        &-text{
+            color:#E4E5EA;
+            font-size: 14px;   
+        }
+    }
+
+    &__contacts{
+        padding-left: 120px;
+        @media screen and (max-width: 1080px) {
+            display: none;
+          }
+       
+
+        &-list{
+            display: flex;
+            gap:30px
+        }
+    }
+    &__purple{
+        position: absolute;
+        top:0;
+        right: 370px;
+        @media screen and (max-width: 1080px) {
+            display: none;
+          }
+    }
+    &__red{
+        position: absolute;
+        bottom: -53px;
+        left: 400px;
+        opacity: 0.8;
+        @media screen and (max-width: 1080px) {
+            display: none;
+          }
+    }
+
+}

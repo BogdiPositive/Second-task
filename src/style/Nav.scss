@@ -1,0 +1,39 @@
+
+.nav{
+  
+  &__mobile{
+    
+    @media screen and (min-width: 1080px) {
+        display: none;
+       
+      }
+      &-list{
+      display: flex;
+      gap: 35px;
+      justify-content: center;
+      }
+      &-link{
+        color: #E4E5EA;
+        font-size: 14px;
+      }
+
+  }
+
+
+
+
+ &__desktop{
+    @media screen and (max-width: 1080px) {
+        display: none;
+      }
+    &-list{
+        display: flex;
+        gap: 15px
+    }
+    &-link{
+        color: #E4E5EA;
+        font-size: 16px;
+      }
+ }
+
+}
